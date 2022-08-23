@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.exe
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.deps.json
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.runtimeconfig.json
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.dll
+C:\Users\Admin\source\repos\Stats\Stats\bin\Debug\netcoreapp3.1\Stats.pdb
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.Form1.resources
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.dll
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.pdb
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Stats\Stats\obj\Debug\netcoreapp3.1\Stats.GeneratedMSBuildEditorConfig.editorconfig
