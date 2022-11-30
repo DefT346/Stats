@@ -78,5 +78,11 @@ namespace Stats
             }
             return x;
         }
+
+        public static double F(double x)
+        {
+            MathNet.Numerics.Distributions.Normal result = new MathNet.Numerics.Distributions.Normal();
+            return result.CumulativeDistribution(x) - 0.5;
+        }
     }
 }

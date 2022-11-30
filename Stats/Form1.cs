@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.Distributions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +17,11 @@ namespace Stats
         public Form1()
         {
             InitializeComponent();
+
             button1_Click(null, null);
         }
 
-        public static string filePath = @"stats.csv";
+        public static string filePath = @"stats3.csv";
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -224,7 +226,10 @@ namespace Stats
             for (int i = 0; i < 25; i++)
             {
                 xvib += middles[i] * wi_list[i];
-                Console.WriteLine($"m:{middles[i]}; wi:{wi_list[i]}");
+                Console.WriteLine($"{borders[i]} - {borders[i+1]}; m:{middles[i]}; wi:{wi_list[i]}|");
+                //Console.WriteLine($"{Math.Round(borders[i],2)}-{Math.Round(borders[i+1],2)}");
+                //Console.WriteLine($"{middles[i]}");
+
             }
             MultiLog($"Xвыб: {xvib}");
 
@@ -253,35 +258,42 @@ namespace Stats
             }
             InsertColown("ksi", ksi_list);
 
-            List<double> Fs = new List<double>
+            //// https://kvm.gubkin.ru/pub/fan/laplasetable2.pdf
+            //List<double> Fs = new List<double>
+            //{
+            //    -0.4861,
+            //    -0.4772,
+            //    -0.4649,
+            //    -0.4463,
+            //    -0.4207,
+            //    -0.3869,
+            //    -0.3461,
+            //    -0.2939,
+            //    -0.2324,
+            //    -0.1628,
+            //    -0.0910,
+            //    -0.0120,
+            //    0.0675,
+            //    0.1406,
+            //    0.2123,
+            //    0.2764,
+            //    0.3315,
+            //    0.3749,
+            //    0.4115,
+            //    0.4394,
+            //    0.4599,
+            //    0.4738,
+            //    0.4838,
+            //    0.4904,
+            //    0.4945,
+            //    0.4969
+            //};
+
+            List<double> Fs = new List<double>();
+            for (int i = 0; i < 26; i++)
             {
-                -0.4861,
-                -0.4772,
-                -0.4649,
-                -0.4463,
-                -0.4207,
-                -0.3869,
-                -0.3461,
-                -0.2939,
-                -0.2324,
-                -0.1628,
-                -0.0910,
-                -0.0120,
-                0.0675,
-                0.1406,
-                0.2123,
-                0.2764,
-                0.3315,
-                0.3749,
-                0.4115,
-                0.4394,
-                0.4599,
-                0.4738,
-                0.4838,
-                0.4904,
-                0.4945,
-                0.4969
-            };
+                Fs.Add(Laplace.F(ksi_list[i]));
+            }
 
             InsertColown("Ф", Fs);
             //Console.WriteLine($"Ф");
@@ -320,7 +332,7 @@ namespace Stats
 
             //Console.WriteLine("x^2");
             List<double> x2_list = new List<double>();
-            for (int i = 0; i < 24; i++)
+            for (int i = 0; i < 25; i++)
             {
                 var x2 = Math.Pow(ni_list[i] - nih_list[i],2)/ nih_list[i];
                 //Console.WriteLine($"{x2}");

@@ -234,7 +234,7 @@ namespace Stats
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1387, 716);
+            this.tabControl1.Size = new System.Drawing.Size(1387, 755);
             this.tabControl1.TabIndex = 13;
             // 
             // Графики
@@ -251,9 +251,10 @@ namespace Stats
             this.Графики.Controls.Add(this.button3);
             this.Графики.Controls.Add(this.button4);
             this.Графики.Location = new System.Drawing.Point(4, 24);
+            this.Графики.Margin = new System.Windows.Forms.Padding(0);
             this.Графики.Name = "Графики";
             this.Графики.Padding = new System.Windows.Forms.Padding(3);
-            this.Графики.Size = new System.Drawing.Size(1379, 688);
+            this.Графики.Size = new System.Drawing.Size(1379, 727);
             this.Графики.TabIndex = 0;
             this.Графики.Text = "Графики";
             this.Графики.UseVisualStyleBackColor = true;
@@ -284,7 +285,7 @@ namespace Stats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 717);
+            this.ClientSize = new System.Drawing.Size(1384, 756);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
