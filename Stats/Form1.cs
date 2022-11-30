@@ -21,7 +21,7 @@ namespace Stats
             button1_Click(null, null);
         }
 
-        public static string filePath = @"stats3.csv";
+        public static string filePath = @"stats.csv";
 
         private void button1_Click(object sender, EventArgs e)
         {
